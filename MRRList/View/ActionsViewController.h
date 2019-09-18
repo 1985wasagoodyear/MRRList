@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ActionsViewController.h
 //  MRRList
 //
 //  Created by K Y on 9/17/19.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ActionsViewController : UIViewController
 
 
 @end
