@@ -17,6 +17,7 @@
     ListNode *head = [[ListNode alloc] init];
     head.val = 1;
     ListNode *curr = head;
+    
     // build the rest of the node
     for (int i = 2; i <= size; i++) {
         ListNode *newNode = [[ListNode alloc] init];

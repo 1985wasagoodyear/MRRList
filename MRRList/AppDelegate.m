@@ -11,21 +11,19 @@
 
 @interface AppDelegate ()
 
-@property (nonatomic) UIViewController *rootViewController;
-
 @end
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     @autoreleasepool {
-        _rootViewController = [[ActionsViewController alloc] init];
+        UIViewController *root =  [[ActionsViewController alloc] init];
         UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
         self.window = window;
-        [_window setRootViewController:_rootViewController];
-        [_rootViewController release];
-        [window release];
+        [_window setRootViewController:root];
         [_window makeKeyAndVisible];
+        [root release];
+        [window release];
     }
     return YES;
 }
