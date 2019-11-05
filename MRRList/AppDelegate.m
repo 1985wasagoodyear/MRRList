@@ -17,7 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     @autoreleasepool {
-        UIViewController *root =  [[ActionsViewController alloc] init];
+        UIViewController *root = [[ActionsViewController alloc] init];
         UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
         self.window = window;
         [_window setRootViewController:root];
